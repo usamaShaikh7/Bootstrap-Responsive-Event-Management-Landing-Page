@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Management Landing Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- Header/Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+      <div class="container">
+        <a class="navbar-brand" href="#">Event Logo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#schedule">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#speakers">Speakers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#register">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="bg-dark text-light text-center py-5"
+      style="
+        background: url('https://via.placeholder.com/1920x600') no-repeat
+          center/cover;
+      "
+    >
+      <div class="container">
+        <h1 class="display-4 fw-bold">Welcome to the Event</h1>
+        <p class="lead">Join us on 25th January 2025</p>
+        <a href="#register" class="btn btn-primary btn-lg">Register Now</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2>About the Event</h2>
+            <p>
+              This event brings together amazing speakers, insightful sessions,
+              and opportunities to network with industry leaders. Don’t miss out
+              on this incredible experience!
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="About Event"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Event Schedule Section -->
+    <section id="schedule" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Event Schedule</h2>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">10:00 AM - Keynote</h5>
+                <p class="card-text">Speaker: Shahil shaikh</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">12:00 PM - Workshop</h5>
+                <p class="card-text">Speaker: Jane Smith</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">3:00 PM - Panel Discussion</h5>
+                <p class="card-text">Speakers: Multiple</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section id="speakers" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Featured Speakers</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL2QxBOj7txaT7FOugqhuj5-IIycE5XImS9w&s"
+                class="card-img-top"
+                alt="Speaker"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Shahil shaikh</h5>
+                <p class="card-text">Expert in technology and innovation.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL2QxBOj7txaT7FOugqhuj5-IIycE5XImS9w&s"
+                class="card-img-top"
+                alt="Speaker"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Jane Smith</h5>
+                <p class="card-text">Renowned author and business leader.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL2QxBOj7txaT7FOugqhuj5-IIycE5XImS9w&s"
+                class="card-img-top"
+                alt="Speaker"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Alice Brown</h5>
+                <p class="card-text">Inspirational speaker and entrepreneur.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Register Now</h2>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input
+              type="text"
+              class="form-control"
+              id="phone"
+              placeholder="Enter your phone number"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="session" class="form-label">Select Session</label>
+            <select id="session" class="form-select">
+              <option value="morning">Morning Session</option>
+              <option value="afternoon">Afternoon Session</option>
+              <option value="evening">Evening Session</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-light text-center py-3">
+      <div class="container">
+        <p>© 2025 Event Management. All rights reserved.</p>
+        <div>
+          <a href="#" class="text-light me-2">Facebook</a>
+          <a href="#" class="text-light me-2">Twitter</a>
+          <a href="#" class="text-light">Instagram</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
